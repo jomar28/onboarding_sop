@@ -21,7 +21,7 @@ export default function OnboardingEmailGenerator() {
   const [clientName, setClientName] = useState('');
   const [selectedProducts, setSelectedProducts] = useState([]);
   const [isManagedCrm, setIsManagedCrm] = useState(true);
-  const [selectedGuides, setSelectedGuides] = useState(['KNK']); 
+  const [selectedGuides, setSelectedGuides] = useState([]); 
   const [showCopyModal, setShowCopyModal] = React.useState(false);
   
   const emailRef = useRef(null);
