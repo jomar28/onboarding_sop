@@ -217,7 +217,13 @@ export default function OnboardingEmailGenerator() {
                           <img 
                             src={guide === 'KNK' ? '/knk-guide.png' : '/sticky-guide.png'} 
                             alt={guide === 'KNK' ? 'Konnektive Guide' : 'Sticky Guide'} 
-                            style={{ maxWidth: '100%', height: 'auto', border: '1px solid #ccc', marginTop: '8px' }} 
+                            style={{ 
+                              maxWidth: '100%', 
+                              width: '500px', // Standard email-safe width
+                              height: 'auto', 
+                              border: '1px solid #ccc', 
+                              marginTop: '8px' 
+                            }}
                           />
                         </p>
                       ))}
